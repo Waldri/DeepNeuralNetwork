@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\CONTROLAR\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,6 +141,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="DNN.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="Layer\Convolutional.h" />
+    <ClInclude Include="Layer\FullyConnected.h" />
+    <ClInclude Include="Layer\Pooling.h" />
+    <ClInclude Include="NuralNet.h" />
+    <ClInclude Include="Optimizer.h" />
+    <ClInclude Include="Output.h" />
+    <ClInclude Include="RNG.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
